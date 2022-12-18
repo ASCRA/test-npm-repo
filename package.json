@@ -1,0 +1,38 @@
+{
+  "name": "koji-test-components",
+  "version": "0.0.1",
+  "description": "This is a PoC of a koji template component library",
+  "scripts": {
+    "rollup": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ASCRA/test-npm-repo.git"
+  },
+  "keywords": [
+    "koji"
+  ],
+  "author": "ASCRA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ASCRA/test-npm-repo/issues"
+  },
+  "homepage": "https://github.com/ASCRA/test-npm-repo#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "@rollup/plugin-typescript": "8.3.3",
+    "@types/react": "^17.0.34",
+    "react": "^17.0.2",
+    "rollup": "^2.60.0",
+    "rollup-plugin-dts": "^4.0.1",
+    "typescript": "^4.4.4"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts"
+}
