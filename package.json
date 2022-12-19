@@ -1,10 +1,12 @@
 {
-  "name": "koji-test-components",
-  "version": "0.0.1",
+  "name": "koji-components-test-repo",
+  "version": "0.0.3",
   "description": "This is a PoC of a koji template component library",
   "scripts": {
     "rollup": "rollup -c",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -20,13 +22,38 @@
   },
   "homepage": "https://github.com/ASCRA/test-npm-repo#readme",
   "devDependencies": {
+    "@babel/core": "7.16.0",
+    "@babel/preset-env": "7.16.4",
+    "@babel/preset-react": "7.16.0",
+    "@babel/preset-typescript": "7.16.0",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@rollup/plugin-typescript": "8.3.3",
+    "@storybook/addon-actions": "^6.5.14",
+    "@storybook/addon-essentials": "^6.5.14",
+    "@storybook/addon-interactions": "^6.5.14",
+    "@storybook/addon-links": "^6.5.14",
+    "@storybook/builder-webpack4": "^6.5.14",
+    "@storybook/manager-webpack4": "^6.5.14",
+    "@storybook/react": "^6.5.14",
+    "@storybook/testing-library": "^0.0.13",
+    "@testing-library/react": "^12.1.2",
+    "@types/react-test-renderer": "17.0.2",
+    "@types/jest": "^27.4.1",
     "@types/react": "^17.0.34",
+    "@types/styled-components": "^5.1.26",
+    "babel-loader": "^8.3.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.5.1",
+    "jest-styled-components": "7.0.8",
     "react": "^17.0.2",
+    "react-test-renderer": "17.0.2",
     "rollup": "^2.60.0",
     "rollup-plugin-dts": "^4.0.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "styled-components": "^5.3.5",
     "typescript": "^4.4.4"
   },
   "main": "dist/cjs/index.js",
@@ -34,5 +61,6 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "dependencies": {}
 }
